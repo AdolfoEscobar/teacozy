@@ -15,8 +15,20 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    justify-content: space-between;
+    padding: 19px 10px;
 }
 
-header ul li{
-    display: inline;
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    display: flex;
+    margin-left: 20px;
+}
+
+header ul li a {
+    font-size: 30px;
 }
