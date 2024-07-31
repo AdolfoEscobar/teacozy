@@ -1,0 +1,22 @@
+* {
+    background-color: black;
+    color: seashell;
+    font-family: Helvetica;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: horizontal;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    z-index: 1000;
+    border-bottom: 1px solid seashell;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header ul li{
+    display: inline;
+}
