@@ -1,5 +1,4 @@
 * {
-    background-color: black;
     color: seashell;
     font-family: Helvetica;
     font-size: 22px;
@@ -9,11 +8,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: black;
+}
+
 header {
     position: fixed;
     display: flex;
     border-bottom: 1px solid seashell;
     width: 100%;
+    height: 69px;
     align-items: center;
     justify-content: space-between;
     padding: 19px 10px;
@@ -21,17 +25,18 @@ header {
     z-index: 1000;
 }
 
+header img {
+    height: 50px;
+}
+
 header ul li {
-    display: inline-block;
+    display: inline-flex;
     margin-right: 20px;
 }
 
-header ul li a {
-    font-size: 35px;
-}
 
 main {
-    padding-top: 123px;
+    padding-top: 69px;
 }
 
 .mission-background {
@@ -92,21 +97,47 @@ figcaption {
    margin: 10px 0;
 }
 
+
+
 .locations {
     background-image: url('./img/img-locations-background.jpg');
     width: 1200px;
     height: 500px;
     background-position: center;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    flex-direction: column;
 }
 
+.locations h2 {
+    font-size: 35px;
+    margin: 15px;
+}
 
+.containers {
+    display: flex;
+    flex-flow: row;
+    gap: 40px;
+    opacity: 1;
+}
 
+.containers .card {
+    background-color: black;
+    opacity: 1;
+    width: 300px;
+    text-align: center;
+}
 
+.card h3 {
+    padding: 20px;
+    font-size: 25px;
+}
+
+.card p {
+    padding: 20px;
+}
 
 .fcontain {
     height: 200px;
