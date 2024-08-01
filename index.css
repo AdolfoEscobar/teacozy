@@ -4,31 +4,126 @@
     font-family: Helvetica;
     font-size: 22px;
     opacity: 0.9;
-    text-align: horizontal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
     position: fixed;
     display: flex;
-    z-index: 1000;
     border-bottom: 1px solid seashell;
-    top: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+    align-items: center;
     justify-content: space-between;
     padding: 19px 10px;
-}
-
-header ul {
-    display: flex;
-    list-style: none;
+    background-color: black;
+    z-index: 1000;
 }
 
 header ul li {
-    display: flex;
-    margin-left: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 header ul li a {
+    font-size: 35px;
+}
+
+main {
+    padding-top: 123px;
+}
+
+.mission-background {
+    position: relative;
+    background-image: url('./img/img-mission-background.jpg');
+    background-position: center;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.mission-text {
+    text-align: center;
+    background-color: black;
+    padding: 25px;
+    width: 100%;
+    opacity: 1;
+}
+
+.mission-text h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.mission-text h4{
+    font-size: 25px;
+}
+.titletea{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titletea h2 {
     font-size: 30px;
+}
+.titletea h2, 
+.titletea h4{
+    margin: 30px;
+}
+
+.teaofmonth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.teaofmonth img {
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+   margin: 10px 0;
+}
+
+.locations {
+    background-image: url('./img/img-locations-background.jpg');
+    width: 1200px;
+    height: 500px;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+.fcontain {
+    height: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+.fcontain h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.fcontain h5 {
+    margin: 20px;
+}
+
+footer p {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
